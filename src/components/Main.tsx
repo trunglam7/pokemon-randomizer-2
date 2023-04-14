@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import PokemonRoster from './PokemonRoster'
 
+import './Main.css'
+
 const Main = () => {
 
     const [randomToggle, setRandomToggle] = useState<boolean>(true);

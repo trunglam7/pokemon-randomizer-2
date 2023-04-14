@@ -2,6 +2,8 @@ import {useEffect, useState } from 'react'
 import PokemonCard from './PokemonCard'
 import axios from 'axios'
 
+import './PokemonRoster.css'
+
 type rosterProp = {
     randomToggle: boolean;
 }
@@ -14,7 +16,7 @@ const PokemonRoster = ({randomToggle} : rosterProp) => {
     useEffect(() => {
         axios.get(url).then((res) => {
             const numPokemon: number = res.data.pokemon_entries.length;
-            const randomRoster: number[] = [...Array(numPokemon).keys()].sort((a, b) => 0.5 - Math.random()).slice(0, 6)
+            const randomRoster: number[] = [...Array(numPokemon).keys()].sort(() => 0.5 - Math.random()).slice(0, 6)
             setRoster(randomRoster);
         })
     }, [randomToggle])
