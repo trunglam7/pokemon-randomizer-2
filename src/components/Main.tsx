@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <main className='main-container'>
             <PokemonRoster randomToggle={randomToggle}/>
-            <button onClick={() => randomToggleHandler()}>Randomize</button>
+            <button className='randomize-btn' onClick={() => randomToggleHandler()}>Randomize</button>
         </main>
     )
 

@@ -8,3 +8,21 @@ header{
     place-items: center;
     padding: 1rem;
 }
+
+.pokedex-container button{
+    cursor: pointer;
+    background-color: #3c5aa6;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+.pokedex-container{
+    display: flex;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+}

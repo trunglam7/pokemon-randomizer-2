@@ -3,6 +3,7 @@
     border: 1px solid black;
     border-radius: 10px;
     padding: 1rem;
+    background-color: white;
 }
 
 .pokemon-name{
@@ -31,4 +32,5 @@
     display: grid;
     place-items: center;
     font-weight: bold;
+    color: white;
 }
